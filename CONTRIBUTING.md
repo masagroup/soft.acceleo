@@ -27,7 +27,3 @@ The build of the repository is described in the [README](README.md#build); the t
 ## CI/CD
 
 No `.github/` directory and no workflows. No shared [cicd](https://github.com/masagroup/cicd) workflow is used and CI produces no artifact (see the ecosystem wiki page [CI/CD pipelines](https://github.com/masagroup/wiki/wiki/cicd-pipelines)). Publication is manual with a personal access token with read/write packages rights; the previous README has the maintainer store that token in clear text in `settings.xml`.
-
-## Known issues and open questions
-
-They are not kept in the repository: see the [private artifact](https://claude.ai/artifact/UfvKmky7e8LwEXf192hQjQ#soft.acceleo) that holds them for every page of the wiki.

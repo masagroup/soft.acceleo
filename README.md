@@ -24,7 +24,7 @@ For the previous documentation of the project (v1), see [README.LEGACY.md](READM
 | **Languages** | none (Markdown only) |
 | **Build systems** | none (manual Maven deploy procedure described in `README.md`) |
 
-**[Architecture](ARCHITECTURE.md)** · [Contributing](CONTRIBUTING.md) · [previous README (v1)](README.LEGACY.md) · [known issues and open questions](https://claude.ai/artifact/UfvKmky7e8LwEXf192hQjQ#soft.acceleo) · [repository on GitHub](https://github.com/masagroup/soft.acceleo)
+**[Architecture](ARCHITECTURE.md)** · [Contributing](CONTRIBUTING.md) · [previous README (v1)](README.LEGACY.md) · [known issues and open questions](https://github.com/masagroup/wiki/wiki/known-issues#soft.acceleo) · [repository on GitHub](https://github.com/masagroup/soft.acceleo)
 
 ## Overview
 
@@ -77,7 +77,7 @@ No executable is produced by this repository (library, contract, data or tooling
 - [Architecture](ARCHITECTURE.md): position in the ecosystem, repository layout, internal structure, how it works (diagrams), dependencies.
 - [Contributing](CONTRIBUTING.md): development environment, Git and Jira workflow, conventions, CI/CD.
 - [Previous README (v1)](README.LEGACY.md): the documentation of the repository before the wiki rewrite.
-- [Known issues and open questions](https://claude.ai/artifact/UfvKmky7e8LwEXf192hQjQ#soft.acceleo): the private artifact that holds them (every page of the wiki).
+- [Known issues and open questions](https://github.com/masagroup/wiki/wiki/known-issues#soft.acceleo): the known defects and open points of the repository, kept in the SWORD wiki.
 - Transverse pages: [Build on Windows](https://github.com/masagroup/wiki/wiki/build-windows), [Build on Linux](https://github.com/masagroup/wiki/wiki/build-linux), [CI/CD pipelines](https://github.com/masagroup/wiki/wiki/cicd-pipelines), [Ecosystem today](https://github.com/masagroup/wiki/wiki/ecosystem-current), [Ecosystem next gen](https://github.com/masagroup/wiki/wiki/ecosystem-nextgen), [Glossary](https://github.com/masagroup/wiki/wiki/glossary).
 - Repository on GitHub: [masagroup/soft.acceleo](https://github.com/masagroup/soft.acceleo).
 - The same documentation in the SWORD wiki: [soft.acceleo](https://github.com/masagroup/wiki/wiki/soft.acceleo), [architecture](https://github.com/masagroup/wiki/wiki/soft.acceleo-architecture), [contributing](https://github.com/masagroup/wiki/wiki/soft.acceleo-contributing), [previous README](https://github.com/masagroup/wiki/wiki/soft.acceleo-legacy).

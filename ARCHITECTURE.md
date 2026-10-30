@@ -105,13 +105,13 @@ flowchart TB
 - **No build, no CI.** There is no `build.xml`, `Dockerfile`, `docker-compose.yaml`, `CMakeLists.txt`, `go.mod`, `Makefile` or `package.json`, and no `.github/` directory. No shared `masagroup/cicd` workflow runs and CI produces no artifact; the only artifacts are the Maven jars in the registry, published by a person.
 - **Two paths, same result.** On Windows, `p2maven.exe` (from `github.com/KinoriTech/p2mvn`) takes the update site URL, `d` (deploy), the registry URL and the repository id `github`, then `%User%/p2mvn.org.eclipse.acceleo/deploy.bat` is run. On any platform, `eclipse -nosplash -verbose -application org.eclipse.equinox.p2.metadata.repository.mirrorApplication` and the matching `artifact.repository.mirrorApplication` mirror the update site (`-source <update site>`) to `-destination file:/tmp/Acceleo-Mirror/`, then `mvn deploy:deploy-file -DgroupId=org.eclipse.acceleo -DartifactId=<id> -Dversion=<v> -Dpackaging=jar -Dfile=<id>_<v>.jar -DrepositoryId=github -Durl=https://maven.pkg.github.com/masagroup/soft.acceleo` runs once per jar. No tool version is pinned (Maven not pinned, p2mvn "latest release"), and the availability of the third-party p2mvn tool is UNVERIFIED.
 - **Points to watch (no audit exists).** The previous README stores the PAT in clear text in `settings.xml`, and the scan recommends moving publication to CI with scoped tokens if the process is ever automated. The example of the previous README (Acceleo 3.7, 2021) is possibly outdated: newer releases may exist on the update site (not checked). The previous `Readme.md` also lacked a trailing newline after its last code fence (cosmetic; the file was replaced by `README.md`).
-- **Remotes.** The canonical repository is `github.com/masagroup/soft.acceleo` (remotes `masa` and `upstream`, matching the registry URL), default branch `main`. The workspace `origin` is `git@github.com:abrMasa/soft.acceleo`, presumably a personal mirror (UNVERIFIED).
+- **Remotes.** The canonical repository is `github.com/masagroup/soft.acceleo` (remotes `masa` and `upstream`, matching the registry URL), default branch `main`.
 
 ## Dependencies
 
 ### Internal (MASA repositories)
 
-None. No `<update>`/`<update-gh>`, no Docker `FROM masagroup/*`, no submodule, no `go.mod` or `package.json`. The registry is intended as a source of Acceleo jars for other MASA builds; consumers are UNVERIFIED (see Open questions).
+None. No `<update>`/`<update-gh>`, no Docker `FROM masagroup/*`, no submodule, no `go.mod` or `package.json`. The registry is intended as a source of Acceleo jars for other MASA builds; consumers are UNVERIFIED (see the [open questions](https://github.com/masagroup/wiki/wiki/known-issues#soft.acceleo)).
 
 ### External
 
